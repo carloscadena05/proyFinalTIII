@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body style="background: #8c95e9">
+	<nav>
+		<ul style=" position: fixed; z-index: 100">
+		    <a href="index.html"><img src="./assets/img/logos.png" style="height: 10%; width: 10%; margin: -10"></a>
+		    <li style="float:right"><a href="about.html">Acerca de nosotros</a></li>
+		    <li style="float:right"><a class="active" href="test.html">Cuestionario</a></li>
+		    <li style="float:right"><a href="dinamica.html">Dinámica</a></li>
+		    <li style="float:right"><a href="info.html">Información</a></li>
+		</ul>
+	</nav>
+
+<audio src="./assets/audio/fondo.wav" autoplay loop></audio>
+<div class="titulo" style="text-align: center;">
+    <h1>Cuestionario</h1>
+                    <h1>Contesta las siguientes preguntas relacionadas a la "Teoría de Sistemas".</h1>
+                </div><br>
+                <div style="text-align: center;">
+                <div id="preg1">
+                    <h1>¿Cómo debe ser una solución?</h1>
+                    <div style="text-align: left; padding-left: 400px;">
+                        <h3><input type="radio" name="preg1" id="preg11" value="1">Definitiva</h3><br>
+                        <h3><input type="radio" name="preg1" id="preg12" value="0">Fundamental</h3><br>
+                        <h3><input type="radio" name="preg1" id="preg13" value="0">Sintomática</h3><br>
+                        <h3><input type="radio" name="preg1" id="preg14" value="0">Sencilla</h3><br>
+                    </div>
+                    <div id="rcP1" style="padding-left: 36%;"></div>
+                </div><br><br>
+                <div id="preg2">
+                    <h1>¿Los recursos compartidos entre elementos, como deben organizarse?</h1>
+                    <div style="text-align: left; padding-left: 400px;">
+                        <h3><input type="radio" name="preg2" id="preg22" value="0">Dependientes</h3><br>
+                        <h3><input type="radio" name="preg2" id="preg23" value="0">Limitados</h3><br>
+                        <h3><input type="radio" name="preg2" id="preg24" value="1">Independientes</h3><br>
+                        <h3><input type="radio" name="preg2" id="preg25" value="0">Escasos</h3><br>
+                    </div>
+                    <div id="rcP2" style="padding-left: 34%;"></div>
+                </div><br><br>
+                <div id="preg3">
+                    <h1>Establecen un compromiso y un rumbo para una organización:</h1>
+                    <div style="text-align: left; padding-left: 400px;">
+                        <h3><input type="radio" name="preg3" id="preg32" value="0">Organización</h3><br>
+                        <h3><input type="radio" name="preg3" id="preg33" value="0">Valores</h3><br>
+                        <h3><input type="radio" name="preg3" id="preg34" value="1">Metas</h3><br>
+                        <h3><input type="radio" name="preg3" id="preg35" value="0">Visión</h3><br>
+                    </div>
+                    <div id="rcP3" style="padding-left: 37%;"></div>
+                </div><br><br>
+                <div id="preg4">
+                    <h1>¿EL ciclo de rivalidad puede romperse?</h1>
+                    <div style="text-align: left; padding-left: 400px;">
+                        <h3><input type="radio" name="preg4" id="preg41" value="0">Agunas veces</h3><br>
+                        <h3><input type="radio" name="preg4" id="preg42" value="1">No debería</h3><br>
+                        <h3><input type="radio" name="preg4" id="preg43" value="0">Siempre</h3><br>
+                        <h3><input type="radio" name="preg4" id="preg44" value="0">La mayoría de las veces </h3><br>
+                    </div>
+                    <div id="rcP4" style="padding-left: 35%;"></div>
+                </div><br><br>
+                <div id="preg5">
+                    <h1>¿Qué le ocurre al desempeño después de un trabajo largo y constante?</h1>
+                    <div style="text-align: left; padding-left: 400px;">
+                        <h3><input type="radio" name="preg5" id="preg51" value="0">Se termina</h3><br>
+                        <h3><input type="radio" name="preg5" id="preg52" value="0">Se mantiene</h3><br>
+                        <h3><input type="radio" name="preg5" id="preg53" value="0">Aumenta</h3><br>
+                        <h3><input type="radio" name="preg5" id="preg54" value="1">Disminuye</h3><br>
+                    </div>
+                    <div id="rcP5" style="padding-left: 35%;"></div>
+                </div><br>
+                </div><br><br><br>
+                <div style="text-align: center; padding-bottom: 50px; padding-left: 42%;">">
+                	<button onclick="mostrarResultado()">Resultado</button>
+                </div>
+                <script src="./js/cuestionario.js"></script>
+</body>
+</html>
